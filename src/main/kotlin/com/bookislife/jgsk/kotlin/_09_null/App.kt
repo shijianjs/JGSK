@@ -6,7 +6,7 @@ package com.bookislife.jgsk.kotlin._09_null
 fun main(args: Array<String>) {
     //  Null
     var result = 0
-    var x = null
+    var x:String? = null
     println(x == null)
     println(x.isNullOrEmpty())
     println(x.isNullOrBlank())

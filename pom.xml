@@ -19,7 +19,7 @@
         <akka-actor.version>2.3.11</akka-actor.version>
         <scala-xml.version>1.0.5</scala-xml.version>
         <scala-maven-plugin.version>3.2.0</scala-maven-plugin.version>
-        <kotlin.version>1.2.51</kotlin.version>
+        <kotlin.version>1.3.72</kotlin.version>
         <junit.version>4.12</junit.version>
         <mockito.version>1.10.19</mockito.version>
         <spek.version>1.0.9</spek.version>
@@ -28,6 +28,7 @@
         <json4s-jackson>3.2.10</json4s-jackson>
         <clojure-plugin.version>1.8.1</clojure-plugin.version>
         <clojure.version>1.8.0</clojure.version>
+        <maven.test.skip>true</maven.test.skip>
     </properties>
 
     <repositories>
@@ -67,6 +68,7 @@
             <groupId>org.codehaus.groovy</groupId>
             <artifactId>groovy-all</artifactId>
             <version>${groovy.version}</version>
+            <type>pom</type>
         </dependency>
 
         <dependency>
@@ -108,6 +110,12 @@
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
             <artifactId>kotlin-reflect</artifactId>
+            <version>${kotlin.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-script-runtime -->
+        <dependency>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-script-runtime</artifactId>
             <version>${kotlin.version}</version>
         </dependency>
 
