@@ -9,6 +9,13 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
+        <!--配置jdk版本-->
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <!--这个会跳过测试代码编译-->
+        <maven.test.skip>true</maven.test.skip>
+        <!--这个会跳过测试代码执行-->
+        <skipTests>true</skipTests>
         <project.build.encoding>UTF-8</project.build.encoding>
         <jdk.version>1.8</jdk.version>
         <maven-compiler-plugin.verion>3.5.1</maven-compiler-plugin.verion>
@@ -28,7 +35,6 @@
         <json4s-jackson>3.2.10</json4s-jackson>
         <clojure-plugin.version>1.8.1</clojure-plugin.version>
         <clojure.version>1.8.0</clojure.version>
-        <maven.test.skip>true</maven.test.skip>
     </properties>
 
     <repositories>
