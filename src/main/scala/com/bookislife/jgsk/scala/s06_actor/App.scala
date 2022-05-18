@@ -14,7 +14,7 @@ import scala.util.Random
   */
 object App {
 
-    def main(args: Array[String]) {
+    def main(args: Array[String]): Unit = {
         testEchoServer()
         testEchoServerUsingDSL()
         testActorAndThread()

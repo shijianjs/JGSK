@@ -58,7 +58,7 @@ fun testClosure() {
 
     //  Closure as Parameter
     val maxValue = max(arrayOf(3, 10, 2, 1, 40)) {
-        it.max()!!
+        it.maxOrNull()!!
     }
     println(maxValue)
 }
